@@ -1,7 +1,6 @@
 package me.vijayjaybhay.androidsmartlogger;
 
 import android.app.Application;
-
 import logger.ApplicationLogger;
 
 /**
