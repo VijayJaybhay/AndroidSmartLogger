@@ -3,11 +3,20 @@ SmartLogger wraps the Android Log class functionalities to provide Development a
 
 SmartLogger does not uses if-else statements to check whether it is production mode or development mode. It simply implements Polimorphism concepts.   
 
-SmartLogger comes with two types of LoggerTypes:<br/>
---> <b>DEVELOPMENT</b> : It works as Android Log class <br/>
---> <b>PRODUCTION</b> : It does not prints anything on Logcat. Simply whatever you log is ignored.<br/>
+SmartLogger comes with two types of LoggerTypes:
+
+<b>DEVELOPMENT</b> : It works as Android Log class <br/>
+<b>PRODUCTION</b> : It does not prints anything on Logcat. Simply whatever you log is ignored.
 You can select which logger to use while intializing the ApplicationLogger. What you need to do is just pass ```LoggerType``` in ```init()```.
 
+SmartLogger supports following Log levels:
+<ul>
+<li>DEBUG</li>
+<li>VERBOSE</li>
+<li>WARN</li>
+<li>INFO</li>
+<li>ERROR</li>
+</ul>
 #How to use?
 
 Follow these steps:<br/>
