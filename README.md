@@ -1,5 +1,12 @@
 # AndroidSmartLogger
-SmartLogger wraps the Android Log class functionalities to provide Development and Production based logging.In Android you need to remove logs before submitting Application to Play Store.So you just need to change LoggerType to PRODUCTION. Smart Logger let you select which mode to use for logging by selecting LoggerType.In Production Logger nothing will be logged.
+SmartLogger wraps the Android Log class functionalities to provide Development and Production based logging.In Android you need to remove logs before submitting Application to Play Store.So you just need to change LoggerType to PRODUCTION. Smart Logger let you select which mode to use for logging by selecting LoggerType.In Production Logger nothing will be logged.<br/>
+
+SmartLogger does not uses if-else statements to check whether it is production mode or development mode. It simply implements Polimorphism concepts.   
+
+SmartLogger comes with two types of LoggerTypes:<br/>
+--> <b>DEVELOPMENT</b> : It works as Android Log class <br/>
+--> <b>PRODUCTION</b> : It does not prints anything on Logcat. Simply whatever you log is ignored.<br/>
+You can select which logger to use while intializing the ApplicationLogger. What you need to do is just pass ```LoggerType``` in ```init()```.
 
 #How to use?
 
